@@ -1,0 +1,6 @@
+[
+  { "nombre": "Desinfección", "precio": 5000 },
+  { "nombre": "Control de roedores", "precio": 4000 },
+  { "nombre": "Mantenimiento de jardín", "precio": 3500 },
+  { "nombre": "Servicio General (incluye los 3 anteriores)", "precio": 11000 }
+]
