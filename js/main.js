@@ -35,7 +35,7 @@ function mostrarServicios() {
       if (existe) {
         existe.cantidad++;
       } else {
-        serviciosSeleccionados.push({...s});
+        serviciosSeleccionados.push({ ...s });
       }
       guardarEnStorage();
       mostrarSeleccionados();
@@ -101,7 +101,11 @@ async function cargarServiciosDesdeJSON() {
     mostrarServicios();
     mostrarSeleccionados();
   } catch (error) {
-    console.error("Error al cargar servicios:", error);
+    Swal.fire({
+      icon: "error",
+      title: "Error al cargar servicios",
+      text: "No se pudieron cargar los servicios desde el archivo JSON."
+    });
   }
 }
 
