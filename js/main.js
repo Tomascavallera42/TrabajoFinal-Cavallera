@@ -23,7 +23,7 @@ function mostrarServicios() {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = `
-      <img src="../assets/${s.imagen}" alt="${s.nombre}" />
+      <img src="assets/${s.imagen}" alt="${s.nombre}" />
       <h3>${s.nombre}</h3>
       <p>${s.descripcion}</p>
       <p>$${s.precio}</p>
@@ -93,7 +93,7 @@ function soloLetrasYEspacios(texto) {
 
 async function cargarServiciosDesdeJSON() {
   try {
-    const res = await fetch("../data/servicios.json");
+    const res = await fetch("data/servicios.json");
     const data = await res.json();
     data.forEach(s => {
       servicios.push(new Servicio(s.nombre, s.precio, s.descripcion, s.imagen));
