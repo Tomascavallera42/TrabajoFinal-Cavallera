@@ -2,33 +2,36 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Omega Saneamientos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  <p>Página web de fumigación con 3 servicios individuales y uno general.</p>
   <h1>Omega Saneamientos</h1>
-  
-  <h2>Selecciona el o los servicios que deseas realizar:</h2>
-  <div id="servicios-container"></div>
 
-  <h3>Servicios seleccionados:</h3>
-  <ul id="lista-seleccionados"></ul>
+  <section id="servicios">
+    <h2>Selecciona servicios:</h2>
+    <div id="servicios-container" class="card-container"></div>
+  </section>
 
-  <button id="ver-total">Ver Total</button>
-  <button id="limpiar-carrito">Limpiar Carrito</button>
+  <section id="carrito">
+    <h2>Carrito</h2>
+    <ul id="lista-seleccionados"></ul>
+    <p id="total">Total: $0</p>
+  </section>
 
-  <p id="total"></p>
-
-  <h3>Datos del cliente</h3>
-  <form id="form-cliente">
-    <input type="text" id="nombre-cliente" placeholder="Tu nombre" required />
-    <input type="text" id="direccion-cliente" placeholder="Dirección" required />
-    <button type="submit">Confirmar pedido</button>
-  </form>
+  <section id="cliente">
+    <h3>Datos del cliente</h3>
+    <form id="form-cliente">
+      <input type="text" id="nombre-cliente" placeholder="Tu nombre" required />
+      <input type="text" id="direccion-cliente" placeholder="Dirección" required />
+      <input type="email" id="email-cliente" placeholder="Email" required />
+      <input type="tel" id="telefono-cliente" placeholder="Teléfono" required />
+      <button type="submit">Confirmar pedido</button>
+    </form>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

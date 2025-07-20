@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Desinfección",
+    "precio": 5000,
+    "descripcion": "Desinfección de ambientes y superficies.",
+    "imagen": "desinfec.jpg"
+  },
+  {
+    "nombre": "Control de roedores",
+    "precio": 4000,
+    "descripcion": "Eliminación y prevención de roedores.",
+    "imagen": "roedor.jpg"
+  },
+  {
+    "nombre": "Mantenimiento de jardín",
+    "precio": 3500,
+    "descripcion": "Corte de césped y limpieza de exteriores.",
+    "imagen": "jardin.jpg"
+  },
+  {
+    "nombre": "Servicio General",
+    "precio": 11000,
+    "descripcion": "Todos los servicios anteriores en uno.",
+    "imagen": "general.jpg"
+  }
+]
